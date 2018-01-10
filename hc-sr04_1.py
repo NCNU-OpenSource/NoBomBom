@@ -49,7 +49,7 @@ GPIO.setup(GPIO_ECHO_3,GPIO.IN)      # Echo
 def send_trigger_pulse(test2):
 	GPIO.output(test2, True)
 	# Allow module to settle
-	time.sleep(0.00000001)
+	time.sleep(0.005)
 	# Set trigger to False (Low)
 	GPIO.output(test2, False)
 
@@ -79,14 +79,14 @@ while True:
 	print("no.1 devices:cm=%f" % get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1))
 	print("no.2 devices:cm=%f" % get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2))
 	print("no.3 devices:cm=%f" % get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3))
-	danger = 10
+	danger = 50
 	if get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1) < danger:
 		blink(4) # first
 	if get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2) < danger:
 		blink(5) # second
 	if get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3) < danger:
 		blink(6) # third
-	time.sleep(0.000001)
+	time.sleep(0.005)
 
 # Distance pulse travelled in that time is time
 # multiplied by the speed of sound (cm/s)
