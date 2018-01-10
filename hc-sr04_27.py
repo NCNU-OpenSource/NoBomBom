@@ -12,7 +12,7 @@ import RPi.GPIO as GPIO
 # instead of physical pin numbers
 GPIO.setmode(GPIO.BCM)
 # Define GPIO to use on Pi (LED)
-GPIO_TRIGGER = 5
+GPIO_TRIGGER = 4
 GPIO.setup(GPIO_TRIGGER,GPIO.OUT)  # Trigger
 
 def blink(pin):
@@ -23,8 +23,8 @@ def blink(pin):
 	return
 
 # Define GPIO to use on Pi (Ultrasonic)
-GPIO_TRIGGER = 17
-GPIO_ECHO = 18
+GPIO_TRIGGER = 27
+GPIO_ECHO = 22
 
 print "Ultrasonic Measurement"
 
@@ -54,7 +54,7 @@ def get_distance():
 while True:
     print("cm=%f" % get_distance())
     if get_distance() < 10:
-        blink(5)
+        blink(4)
     time.sleep(0.1)
 
 
