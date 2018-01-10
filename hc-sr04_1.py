@@ -23,14 +23,14 @@ def blink(pin):
 	return
 
 # Define GPIO to use on Pi (Ultrasonic)
-GPIO_TRIGGER_1 = 23 # 第一台out
-GPIO_ECHO_1 = 24 # 第一台in
+GPIO_TRIGGER_1 = 23 # first out
+GPIO_ECHO_1 = 24 #first in
 
-GPIO_TRIGGER_2 = 17 # 第二台out
-GPIO_ECHO_2 = 18 # 第二台in
+GPIO_TRIGGER_2 = 17 # second out
+GPIO_ECHO_2 = 18 # second in
 
-GPIO_TRIGGER_3 = 27 # 第三台out
-GPIO_ECHO_3 = 22 # 第三台in
+GPIO_TRIGGER_3 = 27 # third out
+GPIO_ECHO_3 = 22 # third in
 
 print "Ultrasonic Measurement"
 
@@ -77,11 +77,11 @@ while True:
     print("no.3 devices:cm=%f" % get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3))
     danger = 10
     if get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1) < danger:
-        blink(4) # 第一台
+        blink(4) # first
     if get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2) < danger:
-        blink(4) # 第二台
+        blink(4) # second
     if get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3) < danger:
-        blink(4) # 第三台
+        blink(4) # third
     time.sleep(0.1)
 
 # Distance pulse travelled in that time is time
