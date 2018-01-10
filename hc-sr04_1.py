@@ -12,8 +12,12 @@ import RPi.GPIO as GPIO
 # instead of physical pin numbers
 GPIO.setmode(GPIO.BCM)
 # Define GPIO to use on Pi (LED)
-GPIO_TRIGGER_LED = 4
-GPIO.setup(GPIO_TRIGGER_LED,GPIO.OUT)  # Trigger
+GPIO_TRIGGER_LED1 = 4
+GPIO_TRIGGER_LED2 = 5
+GPIO_TRIGGER_LED3 = 6
+GPIO.setup(GPIO_TRIGGER_LED1,GPIO.OUT)  # Trigger
+GPIO.setup(GPIO_TRIGGER_LED2,GPIO.OUT)  # Trigger
+GPIO.setup(GPIO_TRIGGER_LED3,GPIO.OUT)  # Trigger
 
 def blink(pin):
 	GPIO.output(pin,GPIO.HIGH)
