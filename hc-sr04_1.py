@@ -59,7 +59,7 @@ def get_distance(test,test2):
     
 	send_trigger_pulse(test2) # Send 10us pulse to trigger
 
-	wait_for_echo(test,True, 500) #
+	wait_for_echo(test,True, 500)
 	start = time.time() 
     wait_for_echo(test,False, 500)
 	#wait_for_echo(False, 5000)
