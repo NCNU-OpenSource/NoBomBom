@@ -63,9 +63,9 @@ def get_distance(test,test2):
 	
 	send_trigger_pulse(test2) # Send 10us pulse to trigger
 
-	wait_for_echo(test,True,100)
+	wait_for_echo(test,True,5000)
 	start = time.time() 
-	wait_for_echo(test,False,100)
+	wait_for_echo(test,False,5000)
 	#wait_for_echo(False, 5000)
 	finish = time.time() 
 	elapsed = finish-start # Calculatsdasdsae pulse length
