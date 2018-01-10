@@ -51,10 +51,10 @@ def send_trigger_pulse(test2):
 
 def wait_for_echo(test,value,timeout):
 	count = timeout
-    while GPIO.input(test)!=value and count > 0:
-        count = count-1
-	# while GPIO.input(GPIO_ECHO_1)!=value and count > 0:
-		# count = count-1
+    # while GPIO.input(test)!=value and count > 0:
+        # count = count-1
+	while GPIO.input(GPIO_ECHO_1)!=value and count > 0:
+		count = count-1
 def get_distance(test,test2):
     
 	send_trigger_pulse(test2) # Send 10us pulse to trigger
