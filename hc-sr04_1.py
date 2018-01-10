@@ -49,7 +49,7 @@ GPIO.setup(GPIO_ECHO_3,GPIO.IN)      # Echo
 def send_trigger_pulse(test2):
 	GPIO.output(test2, True)
 	# Allow module to settle
-	time.sleep(0.1)
+	time.sleep(0.00000001)
 	# Set trigger to False (Low)
 	GPIO.output(test2, False)
 
@@ -63,9 +63,9 @@ def get_distance(test,test2):
 	
 	send_trigger_pulse(test2) # Send 10us pulse to trigger
 
-	wait_for_echo(test,True,500)
+	wait_for_echo(test,True,100)
 	start = time.time() 
-	wait_for_echo(test,False,500)
+	wait_for_echo(test,False,100)
 	#wait_for_echo(False, 5000)
 	finish = time.time() 
 	elapsed = finish-start # Calculatsdasdsae pulse length
@@ -86,7 +86,7 @@ while True:
 		blink(5) # second
 	if get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3) < danger:
 		blink(6) # third
-	time.sleep(0.1)
+	time.sleep(0.000001)
 
 # Distance pulse travelled in that time is time
 # multiplied by the speed of sound (cm/s)
