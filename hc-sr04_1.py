@@ -64,7 +64,7 @@ def get_distance(test,test2):
     wait_for_echo(test,False, 500)
 	#wait_for_echo(False, 5000)
 	finish = time.time() 
-	elapsed = finish-start # Calculate pulse length
+	elapsed = finish-start # Calculatsdasdsae pulse length
     # Distance pulse travelled in that time is time
     # multiplied by the speed of sound (cm/s)
     # That was the distance there and back so halve the value
@@ -72,14 +72,16 @@ def get_distance(test,test2):
 	return (distance)
 
 while True:
-    print("no.1 devices:cm=%f" % get_distance())
+    print("no.1 devices:cm=%f" % get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1))
+    print("no.2 devices:cm=%f" % get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2))
+    print("no.3 devices:cm=%f" % get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3))
     danger = 10
     if get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1) < danger:
         blink(4) # 第一台
     if get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2) < danger:
-        blink(4) # 第一台
+        blink(4) # 第二台
     if get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3) < danger:
-        blink(4) # 第一台
+        blink(4) # 第三台
     time.sleep(0.1)
 
 # Distance pulse travelled in that time is time
