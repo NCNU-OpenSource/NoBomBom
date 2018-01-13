@@ -12,7 +12,17 @@
 | 燈泡 | 3 | Moli借用 |
 
 ## 成品
-圖片~
+#### 用椅子模擬機車
+![](https://i.imgur.com/XpkmSsD.jpg)
+
+#### 三個燈由左至右分別對應「左方」「後方」「右方」，若是該方向有物體接近小於安全距離，燈將會亮起。
+![](https://i.imgur.com/7I2w9UW.jpg)
+
+![](https://i.imgur.com/lXuhe9L.jpg)
+
+![](https://i.imgur.com/0c0zJh5.jpg)
+
+![](https://i.imgur.com/Hz49qqN.jpg)
 
 ## 程式
 主要功能：不斷偵測感測器與其範圍內的東西過近(<50cm)時，使警告燈泡亮起。
