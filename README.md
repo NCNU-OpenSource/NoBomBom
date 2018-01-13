@@ -10,4 +10,4 @@
 6. [學習樹莓派--Raspberry Pi](https://sites.google.com/site/raspberypishare0918/home/lei-bi-gan-ce/chao-yin-bo-ce-ju)
 
 ### 簡報
-https://docs.google.com/presentation/d/1NxVFpDTOssYJsdKBTjhcn7iXhTVzVvaKlWRpcO4yZtY/edit#slide=id.g35f391192_00
+https://docs.google.com/presentation/d/1NxVFpDTOssYJsdKBTjhcn7iXhTVzVvaKlWRpcO4yZtY/edit?usp=sharing
