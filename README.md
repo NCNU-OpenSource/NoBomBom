@@ -7,3 +7,4 @@
 3. [讓你的 Raspberry Pi 透過 GPIO 閃爍 LED 燈](https://coldnew.github.io/f7349436/)
 4. [How to Exit GPIO programs cleanly, avoid warnings and protect your Pi](http://raspi.tv/2013/rpi-gpio-basics-3-how-to-exit-gpio-programs-cleanly-avoid-warnings-and-protect-your-pi)
 5. [Week 14 (2017/12/20) 共筆 Raspberry Pi](https://hackmd.io/OwFgjATAHAZgrMAtANgEYBMDMjye1CEZRABhLDhNQggE5N1ag===?view)
+6. [學習樹莓派--Raspberry Pi](https://sites.google.com/site/raspberypishare0918/home/lei-bi-gan-ce/chao-yin-bo-ce-ju)
