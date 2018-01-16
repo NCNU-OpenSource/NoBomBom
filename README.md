@@ -24,6 +24,9 @@
 
 ![](https://i.imgur.com/Hz49qqN.jpg)
 
+#### 線路圖
+![](https://i.imgur.com/K2KEHRH.png)
+
 ## 程式
 主要功能：不斷偵測感測器與其範圍內的東西過近(<50cm)時，使警告燈泡亮起。
 
