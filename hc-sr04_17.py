@@ -1,9 +1,3 @@
-# ultrasonic_1.py
-# Measure distance using an ultrasonic module
-#
-# Author : Matt Hawkins
-# Date   : 09/01/2013
-
 # Import required Python libraries
 import time
 import RPi.GPIO as GPIO
