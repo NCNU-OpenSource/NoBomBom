@@ -12,7 +12,7 @@ import RPi.GPIO as GPIO
 # instead of physical pin numbers
 GPIO.setmode(GPIO.BCM)
 # Define GPIO to use on Pi (LED)
-GPIO_TRIGGER = 4
+GPIO_TRIGGER = 6
 GPIO.setup(GPIO_TRIGGER,GPIO.OUT)  # Trigger
 
 def blink(pin):
@@ -34,7 +34,7 @@ GPIO.setup(GPIO_ECHO,GPIO.IN)      # Echo
 
 def send_trigger_pulse():
 	GPIO.output(GPIO_TRIGGER, True)
-	time.sleep(0.00001)
+	time.sleep(0.01)
 	GPIO.output(GPIO_TRIGGER, False)
 
 def wait_for_echo(value,timeout):
@@ -54,7 +54,7 @@ def get_distance():
 while True:
     print("cm=%f" % get_distance())
     if get_distance() < 10:
-        blink(4)
+        blink(6)
     time.sleep(0.1)
 
 

@@ -34,7 +34,7 @@ GPIO.setup(GPIO_ECHO,GPIO.IN)      # Echo
 
 def send_trigger_pulse():
 	GPIO.output(GPIO_TRIGGER, True)
-	time.sleep(0.00001)
+	time.sleep(0.05)
 	GPIO.output(GPIO_TRIGGER, False)
 
 def wait_for_echo(value,timeout):

@@ -57,8 +57,6 @@ def wait_for_echo(test,value,timeout):
 	count = timeout
 	while GPIO.input(test)!=value and count > 0:
 		count = count-1
-	# while GPIO.input(GPIO_ECHO_1)!=value and count > 0:
-		# count = count-1
 def get_distance(test,test2):
 	
 	send_trigger_pulse(test2) # Send 10us pulse to trigger
@@ -79,7 +77,7 @@ while True:
 	print("no.1 devices:cm=%f" % get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1))
 	print("no.2 devices:cm=%f" % get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2))
 	print("no.3 devices:cm=%f" % get_distance(GPIO_ECHO_3,GPIO_TRIGGER_3))
-	danger = 50
+	danger = 100
 	if get_distance(GPIO_ECHO_1,GPIO_TRIGGER_1) < danger:
 		blink(4) # first
 	if get_distance(GPIO_ECHO_2,GPIO_TRIGGER_2) < danger:
