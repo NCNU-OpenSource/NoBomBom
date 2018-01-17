@@ -52,9 +52,13 @@ while True:
 ```
 ## 分工
 主題發想：全員討論
+
 資料搜集、採購：全員
+
 簡報內容：李禹叡、張佑崧
+
 程式碼：覃融亮
+
 硬體：何昕庭、何春生
 ## Reference Website
 1. [Raspberry Pi 筆記(十五)：超音波測距離](http://atceiling.blogspot.tw/2014/03/raspberry-pi_18.html)
